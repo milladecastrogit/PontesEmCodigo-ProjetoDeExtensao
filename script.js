@@ -772,8 +772,8 @@ function getDaxCodeTimeValue(time) {
     const timeMap = {
         'menos-1-mes': 1,
         '1-3-meses': 2,
-        '4-6-meses': 3,
-        '7-12-meses': 4,
+        '4-8-meses': 3,
+        '9-12-meses': 4,
         'mais-1-ano': 5
     };
     return timeMap[time] || 0;
@@ -815,8 +815,8 @@ function generateDemographicSummary() {
     const daxCodeTimeText = {
         'menos-1-mes': 'Menos de 1 mês',
         '1-3-meses': '1-3 meses',
-        '4-6-meses': '4-6 meses',
-        '7-12-meses': '7-12 meses',
+        '4-8-meses': '4-8 meses',
+        '9-12-meses': '9-12 meses',
         'mais-1-ano': 'Mais de 1 ano'
     };
     
@@ -893,4 +893,5 @@ function debugQuizElements() {
 // Adicionar debug ao carregar a página
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(debugQuizElements, 1000);
+
 });
