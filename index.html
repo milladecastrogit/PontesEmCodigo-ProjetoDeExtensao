@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontes em Código - CNV para Devs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-frame">
+                    <div class="logo">
+                        <img src="css/image/logo.png" alt="Pontes em Código - Logo do Projeto" style="max-width: 300px; height: auto;">
+                    </div>
+                    <div class="logo-subtitle">Comunicação Não Violenta para Devs | Projeto Dax Code</div>
+                </div>
+            </div>
+            <div class="header-content">
+                <h1>Projeto de Extensão - Unifacs</h1>
+                <p>Uma ferramenta interativa para desenvolver habilidades de comunicação empática no contexto da programação colaborativa.</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navegação -->
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="#ebook"><i class="fas fa-book"></i> Mini-eBook</a></li>
+                <li><a href="#video"><i class="fas fa-play-circle"></i> Vídeo</a></li>
+                <li><a href="#quiz"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                <li><a href="#whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section">
+            <h2 class="section-title">Sobre o Projeto</h2>
+            <div class="about-text">
+                <p>O <strong>Pontes em Código</strong> é um projeto de extensão desenvolvido para os alunos do <strong>Dax Code</strong>, integrando os princípios da <strong>Comunicação Não Violenta (CNV)</strong> de Marshall Rosenberg ao contexto do aprendizado de programação.</p>
+                
+                <div class="ods-badges">
+                    <div class="ods-badge">ODS 4: Educação de Qualidade</div>
+                    <div class="ods-badge">ODS 10: Redução das Desigualdades</div>
+                    <div class="ods-badge">ODS 16: Paz e Justiça</div>
+                </div>
+                
+                <p>Na programação colaborativa, tão importante quanto escrever código eficiente é saber comunicar-se com clareza, dar e receber feedback construtivo, e resolver conflitos de maneira empática. Este projeto oferece uma introdução prática à CNV adaptada ao universo do desenvolvimento de software.</p>
+                
+                <div class="cnv-principle">
+                    <h3><i class="fas fa-heart"></i> Por que CNV para programadores?</h3>
+                    <p>A comunicação não violenta ajuda em situações como:</p>
+                    <ul>
+                        <li>Code reviews construtivos (sem críticas pessoais)</li>
+                        <li>Pair programming eficaz</li>
+                        <li>Reuniões de equipe produtivas</li>
+                        <li>Resolução de conflitos em projetos</li>
+                        <li>Comunicação clara com clientes e stakeholders</li>
+                    </ul>
+                </div>
+                
+                <p>Esta ferramenta foi desenvolvida para aplicação presencial com alunos do Dax Code e disponibilização via WhatsApp para quem tiver interesse. A implementação é simples e direta, focada no aprendizado prático.</p>
+            </div>
+        </section>
+        
+        <!-- Mini-eBook -->
+        <section id="ebook" class="section">
+            <h2 class="section-title">Mini-eBook: CNV para Devs</h2>
+            <div class="ebook-container">
+                <!-- Container das páginas -->
+                <div class="ebook-pages">
+                    <div id="ebook-page-1" class="ebook-page active">
+                        <h3>Introdução à Comunicação Não Violenta</h3>
+                        <p>A <strong>Comunicação Não Violenta (CNV)</strong> é uma abordagem desenvolvida por Marshall Rosenberg que transforma a maneira como nos expressamos e ouvimos os outros. No contexto da programação, isso significa:</p>
+                        
+                        <div class="cnv-principle">
+                            <h4><i class="fas fa-code"></i> CNV no Desenvolvimento de Software</h4>
+                            <p>Assim como escrevemos código limpo e legível, precisamos nos comunicar com clareza e empatia. A CNV nos ajuda a:</p>
+                            <ul>
+                                <li>Dar feedback sobre código sem criticar a pessoa</li>
+                                <li>Expressar dificuldades técnicas sem culpar outros</li>
+                                <li>Pedir ajuda de forma clara e específica</li>
+                                <li>Ouvir diferentes perspectivas em discussões técnicas</li>
+                            </ul>
+                        </div>
+                        
+                        <p>A CNV é baseada em 4 componentes simples que veremos nas próximas páginas. Pense neles como "funções" para uma comunicação mais eficaz.</p>
+                    </div>
+                    
+                    <div id="ebook-page-2" class="ebook-page">
+                        <h3>1. Observação (O "console.log" da Comunicação)</h3>
+                        
+                        <div class="cnv-principle">
+                            <h4><i class="fas fa-search"></i> O que é?</h4>
+                            <p>Descrever fatos concretos sem julgamentos, como um <code>console.log()</code> mostra dados sem interpretá-los.</p>
+                        </div>
+                        
+                        <p><strong>Exemplo no código:</strong></p>
+                        <ul>
+                            <li><strong>Com julgamento:</strong> "Seu código está confuso"</li>
+                            <li><strong>Com observação:</strong> "Esta função tem 120 linhas e 5 níveis de indentação"</li>
+                        </ul>
+                        
+                        <p><strong>Exercício rápido:</strong> Na próxima code review, tente descrever apenas o que você vê no código, sem adicionar adjetivos como "ruim", "confuso" ou "complexo".</p>
+                    </div>
+                    
+                    <div id="ebook-page-3" class="ebook-page">
+                        <h3>2. Sentimento (O "debug" emocional)</h3>
+                        
+                        <div class="cnv-principle">
+                            <h4><i class="fas fa-heartbeat"></i> O que é?</h4>
+                            <p>Identificar e expressar emoções genuínas relacionadas à observação.</p>
+                        </div>
+                        
+                        <p><strong>Exemplo no trabalho em equipe:</strong></p>
+                        <ul>
+                            <li><strong>Pseudo-sentimento:</strong> "Sinto que você não se importa com o projeto"</li>
+                            <li><strong>Sentimento genuíno:</strong> "Estou preocupado com o prazo do projeto"</li>
+                        </ul>
+                        
+                        <p><strong>Dica para devs:</strong> Assim como identificamos bugs pelo comportamento do sistema, podemos identificar sentimentos pelas sensações no corpo (tensão, calor, frio, etc.).</p>
+                    </div>
+                    
+                    <div id="ebook-page-4" class="ebook-page">
+                        <h3>3. Necessidade (Os "requisitos" humanos)</h3>
+                        
+                        <div class="cnv-principle">
+                            <h4><i class="fas fa-cogs"></i> O que é?</h4>
+                            <p>Reconhecer quais necessidades estão por trás dos sentimentos.</p>
+                        </div>
+                        
+                        <p><strong>Exemplo em pair programming:</strong></p>
+                        <ul>
+                            <li><strong>Focando no outro:</strong> "Você precisa escrever código mais limpo"</li>
+                            <li><strong>Focando na necessidade:</strong> "Preciso entender o código rapidamente para contribuir"</li>
+                        </ul>
+                        
+                        <p><strong>Necessidades comuns em projetos:</strong> clareza, colaboração, respeito, aprendizado, eficiência, criatividade.</p>
+                    </div>
+                    
+                    <div id="ebook-page-5" class="ebook-page">
+                        <h3>4. Pedido (A "API" da comunicação)</h3>
+                        
+                        <div class="cnv-principle">
+                            <h4><i class="fas fa-handshake"></i> O que é?</h4>
+                            <p>Fazer solicitações claras, específicas e positivas (não exigências).</p>
+                        </div>
+                        
+                        <p><strong>Exemplo em code review:</strong></p>
+                        <ul>
+                            <li><strong>Exigência:</strong> "Você tem que refatorar isso"</li>
+                            <li><strong>Pedido claro:</strong> "Você poderia dividir esta função em funções menores de até 30 linhas?"</li>
+                        </ul>
+                        
+                        <p><strong>Características de um bom pedido:</strong></p>
+                        <ol>
+                            <li>Ação concreta ("escrever testes" em vez de "melhorar a qualidade")</li>
+                            <li>Formulada positivamente ("fazer X" em vez de "não fazer Y")</li>
+                            <li>Permite um "não" como resposta</li>
+                        </ol>
+                        
+                        <div class="cnv-principle">
+                            <h4><i class="fas fa-laptop-code"></i> Resumo: O Algoritmo da CNV</h4>
+                            <p>1. Observo que [fato concreto]<br>
+                               2. Me sinto [emoção genuína]<br>
+                               3. Porque preciso de [necessidade]<br>
+                               4. Você poderia [pedido específico]?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controles de navegação -->
+                <div class="ebook-controls">
+                    <button id="prev-page" class="ebook-btn" disabled>
+                        <i class="fas fa-arrow-left"></i> Anterior
+                    </button>
+                    
+                    <div class="page-indicator">
+                        Página <span id="current-page">1</span> de <span id="total-pages">5</span>
+                    </div>
+                    
+                    <button id="next-page" class="ebook-btn">
+                        Próxima <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Vídeo -->
+        <section id="video" class="section">
+            <h2 class="section-title">Vídeo: CNV na Prática</h2>
+            <div class="video-container">
+                <p>Assista a este vídeo de introdução à Comunicação Não Violenta com exemplos do cotidiano:</p>
+                
+                <div class="video-wrapper">
+                    <!-- Link do vídeo do YouTube - substitua pelo link real -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cEHf_NcCw1Q?si=udQ4D7gRDACBHKxa" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+                </div>
+                
+                <p><strong>Dica:</strong> Preste atenção em como os princípios da CNV podem ser aplicados em situações do seu dia a dia como programador(a).</p>
+            </div>
+        </section>
+        
+        <!-- Quiz Interativo -->
+        <section id="quiz" class="section">
+            <h2 class="section-title">Quiz: Teste seu conhecimento sobre CNV</h2>
+            
+            <!-- Formulário de Registro Demográfico (aparece antes do quiz) -->
+            <div id="demographic-form" class="form-container">
+                <h3>Antes de começar, conte um pouco sobre você:</h3>
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label class="form-label" for="age">Idade:</label>
+                        <select id="age" class="form-select" required>
+                            <option value="">Selecione sua faixa etária</option>
+                            <option value="13-17">13-17 anos</option>
+                            <option value="18-24">18-24 anos</option>
+                            <option value="25-34">25-34 anos</option>
+                            <option value="35-44">35-44 anos</option>
+                            <option value="45+">45+ anos</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="gender">Gênero:</label>
+                        <select id="gender" class="form-select" required>
+                            <option value="">Selecione</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="nao-binario">Não-binário</option>
+                            <option value="prefiro-nao-informar">Prefiro não informar</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="education">Escolaridade:</label>
+                        <select id="education" class="form-select" required>
+                            <option value="">Selecione</option>
+                            <option value="fundamental-incompleto">Fundamental Incompleto</option>
+                            <option value="fundamental-completo">Fundamental Completo</option>
+                            <option value="medio-incompleto">Médio Incompleto</option>
+                            <option value="medio-completo">Médio Completo</option>
+                            <option value="superior-incompleto">Superior Incompleto</option>
+                            <option value="superior-completo">Superior Completo</option>
+                            <option value="pos-graduacao">Pós-graduação</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="dax-code-time">Há quanto tempo participa do Dax Code?</label>
+                        <select id="dax-code-time" class="form-select" required>
+                            <option value="">Selecione</option>
+                            <option value="menos-1-mes">Menos de 1 mês</option>
+                            <option value="1-3-meses">1-3 meses</option>
+                            <option value="4-6-meses">4-6 meses</option>
+                            <option value="7-12-meses">7-12 meses</option>
+                            <option value="mais-1-ano">Mais de 1 ano</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="ebook-btn" id="start-quiz-btn">
+                        Começar Quiz <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Container do Quiz (inicialmente escondido) -->
+            <div id="quiz-container" class="hidden">
+                <div id="quiz-question-container">
+                    <div class="quiz-question" id="question-text">
+                        Questão 1: Qual é o primeiro componente da Comunicação Não Violenta?
+                    </div>
+                    <div class="quiz-options" id="options-container">
+                        <!-- Opções serão inseridas via JavaScript -->
+                    </div>
+                </div>
+                
+                <div id="quiz-results" class="hidden">
+                    <div class="results-container">
+                        <h3 class="results-title">Seu Resultado no Quiz CNV</h3>
+                        <div class="results-text" id="quiz-result-text">
+                            <!-- Resultado personalizado será inserido aqui -->
+                        </div>
+                        
+                        <!-- Gráfico de Desempenho -->
+                        <div class="chart-container">
+                            <canvas id="quiz-chart"></canvas>
+                        </div>
+                        
+                        <!-- Gráfico Demográfico -->
+                        <div class="chart-container mt-30">
+                            <canvas id="demographic-chart"></canvas>
+                        </div>
+                        
+                        <!-- Resumo dos Dados para Instituição -->
+                        <div id="institution-data" class="cnv-principle mt-30">
+                            <h4><i class="fas fa-chart-line"></i> Dados para Análise Institucional</h4>
+                            <div id="demographic-summary">
+                                <!-- Resumo demográfico será inserido aqui -->
+                            </div>
+                        </div>
+                        
+                        <div class="results-buttons">
+                            <button id="retry-quiz" class="ebook-btn">
+                                <i class="fas fa-redo"></i> Refazer Quiz
+                            </button>
+                            
+                            <button id="share-results" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> Compartilhar Resultados
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quiz-nav">
+                    <button id="prev-question" class="ebook-btn" disabled>
+                        <i class="fas fa-arrow-left"></i> Anterior
+                    </button>
+                    <div id="quiz-progress">Pergunta 1 de 15</div>
+                    <button id="next-question" class="ebook-btn">
+                        Próxima <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- WhatsApp -->
+        <section id="whatsapp" class="section">
+            <h2 class="section-title">Participe via WhatsApp</h2>
+            <div class="whatsapp-container">
+                <p>Quer receber mais conteúdo sobre CNV para programadores ou tirar dúvidas sobre o projeto?</p>
+                <p>Clique no botão abaixo para enviar uma mensagem diretamente para o nosso WhatsApp:</p>
+                
+                 <a href="https://wa.me/5571991311250?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20projeto%20Pontes%20em%20Código%20e%20Comunicação%20Não%20Violenta%20para%20devs." 
+                   target="_blank" 
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Enviar mensagem no WhatsApp
+                 </a>
+                
+                <p class="mt-30"><small>O link já vem com uma mensagem pré-pronta sobre o projeto.</small></p>
+                
+                <div class="cnv-principle mt-30">
+                    <h4><i class="fas fa-share-alt"></i> Compartilhe seus resultados</h4>
+                    <p>Após fazer o quiz, tire um print do seu resultado e compartilhe no grupo do Dax Code! Vamos aprender juntos sobre comunicação empática.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Projeto de Extensão "Pontes em Código" - Comunicação Não Violenta para Devs</p>
+                <p>Desenvolvido por Camila Paranhos | Bacharelado em Ciência da Computação - Unifacs</p>
+                <p>Parceria: Dax Code & UOSC Camaçari</p>
+                
+                <div class="footer-links">
+                    <a href="#sobre">Sobre</a> |
+                    <a href="#ebook">eBook</a> |
+                    <a href="#video">Vídeo</a> |
+                    <a href="#quiz">Quiz</a> |
+                    <a href="#whatsapp">WhatsApp</a>
+                </div>
+                
+                <p class="mt-30">
+                    <i class="fas fa-graduation-cap"></i> Projeto acadêmico para cumprimento de carga horária de extensão universitária
+                </p>
+                <p>© 2025 - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
