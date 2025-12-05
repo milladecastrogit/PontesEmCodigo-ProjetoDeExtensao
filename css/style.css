@@ -157,10 +157,12 @@ nav {
 .about-text {
     font-size: 1.1rem;
     line-height: 1.8;
+    
 }
 
 .about-text p {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .ods-badges {
@@ -264,6 +266,7 @@ nav {
     margin-bottom: 15px;
     font-size: 1.1rem;
     line-height: 1.7;
+    text-align: justify;
 }
 
 .ebook-page ul,
@@ -808,4 +811,5 @@ footer {
 
 .fade-in {
     animation: fadeIn 0.5s ease forwards;
+
 }
